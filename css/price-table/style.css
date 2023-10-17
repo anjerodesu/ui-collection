@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap');
+
+body {
+    font-family: 'Sono', sans-serif;
+}
+
+.pricing-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.pricing-plan {
+    color: #F5E8B7;
+    background-color: #CD5C08;
+    flex: 0 0 300px;
+    height: 280px;
+    padding-top: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.plan-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.plan-price {
+    font-size: 36px;
+    font-weight: bold;
+}
+.plan-features {
+    font-size: 12px;
+    list-style-type: none;
+    margin: 12px 0px;
+    padding-left: 0;
+}
+
+.plan-button {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #6A9C89;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.plan-button:hover {
+    background-color: #C1D8C3;
+    box-shadow: 0 0 20px #6fC5FF50;
+    transform: scale(1.1);
+}
+
+.plan-button:active {
+    background-color: #6A9C89;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+}
+
+ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkmark {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+.checkmark_stem {
+    position: absolute;
+    width: 3px;
+    height: 9px;
+    background-color: #C1D8C3;
+    left: 11px;
+    top: 6px;
+}
+.checkmark_kick {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: #C1D8C3;
+    left: 8px;
+    top: 12px;
+}
+
+.close {
+    position: inline-block;
+    width: 22px;
+    height: 22px;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+.close_left, .close_right {
+    position: absolute;
+    width: 2px;
+    height: 11px;
+    background-color: #333;
+    left: 11px;
+    top: 6px;
+}
+.close_left {
+    transform: rotate(-45deg);
+}
+.close_right {
+    transform: rotate(45deg);
+}
+
+@media (max-width: 1250px) {
+    .pricing-container {
+        flex-direction: column;
+        height: 120vh;
+    }
+
+    .pricing-plan {
+        flex: 0 0 280px;
+        gap: 10px;
+        width: 350px;
+    }
+}
